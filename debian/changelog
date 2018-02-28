@@ -1,0 +1,46 @@
+python-subprocess32 (3.2.7-3) unstable; urgency=medium
+
+  * deb/control:
+    + move team to Maintainer, restore myself into Uploaders.
+    + build against dh 10 (change also deb/compat).
+    + drop deprecated Testsuite field.
+    + bump standards to 4.1.3 (no further changes needed).
+  * deb/copyright:
+    + expand copyright span.
+  * add deb/gbp.conf, drop deb/.git-dpm.
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+
+ -- Daniel Stender <stender@debian.org>  Wed, 28 Feb 2018 17:38:28 +0100
+
+python-subprocess32 (3.2.7-2) unstable; urgency=medium
+
+  * New maintainer.
+    Thanks to Daniel Stender for maintaining python-subprocess32.
+    (Closes: #816532)
+  * d/copyright: Added myself to Debian part
+  * d/rules: Use the bindnow linker flag.
+    The _posixsubprocess binary was lacking the "bindnow" linker flag.
+
+ -- Ilias Tsitsimpis <i.tsitsimpis@gmail.com>  Tue, 06 Sep 2016 14:50:32 +0300
+
+python-subprocess32 (3.2.7-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * Fixed VCS URL (https)
+  * d/docs: README.txt -> README.md
+  * Standards-Version is 3.9.8 now (no changes needed)
+  * d/control: Changed homepage to PyPI
+  * Enabled autopkgtest-pkg-python testsuite
+  * d/copyright: Added myself to Debian part
+
+ -- Ondřej Nový <novy@ondrej.org>  Sat, 04 Jun 2016 14:43:26 +0200
+
+python-subprocess32 (3.2.6-1) unstable; urgency=medium
+
+  * Initial release (Closes: #797583).
+
+ -- Daniel Stender <debian@danielstender.com>  Tue, 01 Sep 2015 21:00:09 +0200
